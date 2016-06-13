@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RMS.FunctionLibrary.RMSPublic" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RMS.FunctionLibrary.RMSPublic" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="Functions.IncludeGroupMasters">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ExcludeGroupMasters" />
+      <xs:enumeration value="IncludeGroupMasters" />
+      <xs:enumeration value="OnlyGroupMasters" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.IncludeGroupMasters" nillable="true" type="tns:Functions.IncludeGroupMasters" />
+  <xs:simpleType name="Functions.ResultCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UnknownError" />
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="NoMatches">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TooManyMatches">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">11</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.ResultCode" nillable="true" type="tns:Functions.ResultCode" />
+  <xs:simpleType name="Functions.AccessType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="InOnly" />
+      <xs:enumeration value="OutOnly" />
+      <xs:enumeration value="InOut" />
+      <xs:enumeration value="InOutWithAntiPassback" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.AccessType" nillable="true" type="tns:Functions.AccessType" />
+  <xs:simpleType name="Functions.Status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="InThePark" />
+      <xs:enumeration value="OutOfThePark" />
+      <xs:enumeration value="NotSure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.Status" nillable="true" type="tns:Functions.Status" />
+  <xs:simpleType name="Functions.Country">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Australia">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">13</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NewZealand">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">152</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UK">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">218</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.Country" nillable="true" type="tns:Functions.Country" />
+  <xs:simpleType name="Functions.LookupPostcodeBy">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Postcode" />
+      <xs:enumeration value="Town" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.LookupPostcodeBy" nillable="true" type="tns:Functions.LookupPostcodeBy" />
+  <xs:simpleType name="Functions.TransactionSource">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSet" />
+      <xs:enumeration value="PointOfSale" />
+      <xs:enumeration value="Kiosk" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.TransactionSource" nillable="true" type="tns:Functions.TransactionSource" />
+  <xs:simpleType name="Functions.TransactionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSet" />
+      <xs:enumeration value="Charge" />
+      <xs:enumeration value="Receipt" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Functions.TransactionType" nillable="true" type="tns:Functions.TransactionType" />
+</xs:schema>

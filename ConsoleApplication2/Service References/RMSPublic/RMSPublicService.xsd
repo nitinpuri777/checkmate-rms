@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RMS.FunctionLibrary.Data.Manager" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RMS.FunctionLibrary.Data.Manager" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="Category.CategoryClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Facility" />
+      <xs:enumeration value="Accomm" />
+      <xs:enumeration value="Activity" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Category.CategoryClass" nillable="true" type="tns:Category.CategoryClass" />
+  <xs:complexType name="ArrayOfArea.CleanStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Area.CleanStatus" type="tns:Area.CleanStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArea.CleanStatus" nillable="true" type="tns:ArrayOfArea.CleanStatus" />
+  <xs:simpleType name="Area.CleanStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VacantClean" />
+      <xs:enumeration value="VacantDirty" />
+      <xs:enumeration value="OccupiedOld" />
+      <xs:enumeration value="Occupied" />
+      <xs:enumeration value="VacantInspect" />
+      <xs:enumeration value="Maintenance" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Area.CleanStatus" nillable="true" type="tns:Area.CleanStatus" />
+  <xs:simpleType name="Client.ClientType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="All">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Client">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Owner">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CopyOfOrigAddress">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BrandAlliance">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ThirdPartyPayments">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TourOperator">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Staff">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Contractor">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SalesLead">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Client.ClientType" nillable="true" type="tns:Client.ClientType" />
+  <xs:complexType name="ArrayOfClient.Activity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Client.Activity" type="tns:Client.Activity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClient.Activity" nillable="true" type="tns:ArrayOfClient.Activity" />
+  <xs:simpleType name="Client.Activity">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoActivity" />
+      <xs:enumeration value="PhoneInternal" />
+      <xs:enumeration value="PhoneExternal" />
+      <xs:enumeration value="Internet" />
+      <xs:enumeration value="Vending" />
+      <xs:enumeration value="BarAlcoholic" />
+      <xs:enumeration value="BanNonAlcoholic" />
+      <xs:enumeration value="PayPerView" />
+      <xs:enumeration value="PayPerViewAdultsOnly" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Client.Activity" nillable="true" type="tns:Client.Activity" />
+  <xs:simpleType name="Account.AccountType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSet" />
+      <xs:enumeration value="Accomm" />
+      <xs:enumeration value="Extras" />
+      <xs:enumeration value="Pabx" />
+      <xs:enumeration value="Gas" />
+      <xs:enumeration value="Electricity" />
+      <xs:enumeration value="Water" />
+      <xs:enumeration value="CashAccount" />
+      <xs:enumeration value="Internet" />
+      <xs:enumeration value="ClientAccount" />
+      <xs:enumeration value="TravelAgent" />
+      <xs:enumeration value="OwnersAccount" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Account.AccountType" nillable="true" type="tns:Account.AccountType" />
+  <xs:simpleType name="Account.BillTo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSet" />
+      <xs:enumeration value="Client" />
+      <xs:enumeration value="Company" />
+      <xs:enumeration value="TravelAgent" />
+      <xs:enumeration value="GroupName" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Account.BillTo" nillable="true" type="tns:Account.BillTo" />
+  <xs:simpleType name="Receipt.ReceiptType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotSet" />
+      <xs:enumeration value="Cash" />
+      <xs:enumeration value="Cheque" />
+      <xs:enumeration value="CreditCard" />
+      <xs:enumeration value="EftPos" />
+      <xs:enumeration value="Journal" />
+      <xs:enumeration value="Voucher" />
+      <xs:enumeration value="TrustTransfer" />
+      <xs:enumeration value="DirectCredit" />
+      <xs:enumeration value="EftPosMachine" />
+      <xs:enumeration value="ForexCash" />
+      <xs:enumeration value="CreditTransfer" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Receipt.ReceiptType" nillable="true" type="tns:Receipt.ReceiptType" />
+</xs:schema>

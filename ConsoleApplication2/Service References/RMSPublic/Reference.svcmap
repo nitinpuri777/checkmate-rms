@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fa638e8b-0be3-4b43-a6c2-cc67dbfe19c8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RMSPublicService.xsd" MetadataType="Schema" ID="f7147d7e-8049-4bbb-8e21-701cc0768c68" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd5" />
+    <MetadataFile FileName="RMSPublicService1.xsd" MetadataType="Schema" ID="9a9128b9-4f21-4380-adb3-4c82ab8fa0ca" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd7" />
+    <MetadataFile FileName="RMSPublicService2.xsd" MetadataType="Schema" ID="0aba58c4-1e37-4655-9b9c-a031b827f2cf" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd9" />
+    <MetadataFile FileName="RMSPublicService3.xsd" MetadataType="Schema" ID="c0d88e44-967c-4f4c-8758-9ebd039e33be" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceLibrary.wsdl" MetadataType="Wsdl" ID="1d67b55c-4dec-4cdb-9c90-faedd0ce0119" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?wsdl" />
+    <MetadataFile FileName="RMSPublicService4.xsd" MetadataType="Schema" ID="c1c5e068-a310-489e-804f-6de9739663e2" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd2" />
+    <MetadataFile FileName="RMSPublicService5.xsd" MetadataType="Schema" ID="929f542c-5a23-421a-9457-38b32bc95d99" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd4" />
+    <MetadataFile FileName="RMSPublicService6.xsd" MetadataType="Schema" ID="0568ddf2-ced4-43b3-9289-0f2f1d74b7d2" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd6" />
+    <MetadataFile FileName="RMSPublicService7.xsd" MetadataType="Schema" ID="026e5319-58ce-44b8-bedc-19a16c9367d1" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd8" />
+    <MetadataFile FileName="RMSPublicService8.xsd" MetadataType="Schema" ID="23d23588-b5df-4fa3-8efc-84aed90ae0dc" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd11" />
+    <MetadataFile FileName="RMSPublicService9.xsd" MetadataType="Schema" ID="de214895-e6e1-48fe-abe8-153140e3e531" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd1" />
+    <MetadataFile FileName="RMSPublicService10.xsd" MetadataType="Schema" ID="d444daa9-177f-4afb-9b22-1924424183ce" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd10" />
+    <MetadataFile FileName="RMSPublicService11.xsd" MetadataType="Schema" ID="be2e3e30-218c-4e77-9e2a-35518c60cc3e" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?xsd=xsd3" />
+    <MetadataFile FileName="RMSPublicService.disco" MetadataType="Disco" ID="4ea9cf07-99bf-4ca6-960c-da36d104a070" SourceId="1" SourceUrl="https://api.rms.com.au/RMSPublicService/RMSPublicService.ServiceLibrary.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

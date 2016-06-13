@@ -5,7 +5,7 @@
     Public Const nAgentId As Integer = 44 'This is Checkmate's Agent ID
     Public Const sAgentPwd As String = "" 'Enter in Checkmate's Agent Password from Integrations Document
     'Api Token is the Admin Token ...@mail.checkmate.io
-    Public Const aApiToken As String = "a3ffea3539fb226bdaee860c98882e07"
+    Public Const aApiToken As String = "**ENTER CHECKMATE API TOKEN**"
     'Login to security.google.com/settings/security/apppasswords and create a new single use App password and name it for the hotel
     Public Const sEmailAppPassword As String = ""
     'Replace the Hotel Name in the quotes

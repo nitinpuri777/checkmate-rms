@@ -1,5 +1,10 @@
 # checkmate-rms
-RMS VBA application for Checkmate Classic Integrations
+RMS VBA application for Checkmate Classic Integrations. This script is setup to run for an individual hotel with specific credentials provided.  You'll need to build a new application for each new hotel with this source code. 
+
+##Requirements
+Current RMS Scripts are running on an AWS Windows Server instance with the following specifications:
+  * Windows Server 2012 or later
+  * Visual Studio 2015
 
 ##Setting up a new Hotel on Classic
 ===================================
